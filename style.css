@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    background-color: #ffffff;
+    top: 10px;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px 20px;
+    transition: background-color 0.3s ease;
+    border-bottom: 1px solid #b2b2b2;
+
+}
+
+.logo {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.logo>h1 {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 700;
+    color: #000000;
+}
+
+.logo>img {
+    max-width: 150px;
+    margin-right: -45px;
+    margin-top: 6px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    cursor: pointer;
+}
+
+nav ul li {
+    margin: 0 15px;
+    font-size: large;
+    font-weight: 500;
+}
+
+nav ul li a {
+    color: #434343;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff6347;
+}
+
+nav ul li a:active {
+    color: #000000;
+}
+
+.nav-icons {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    cursor: pointer;
+}
+
+section {
+    padding: 100px 20px;
+    margin-top: 110px;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-sec {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 20px;
+    min-height: 70vh;
+    margin-top: 30px;
+    background-color: #ffffff;
+}
+
+.col-l {
+    display: grid;
+    justify-content: center;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+.col-l>h1 {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 700;
+    font-size: 5rem;
+    margin-bottom: -10px;
+}
+
+.col-r {
+    display: flex;
+    justify-content: center;
+}
+.hero-btn{
+ width: 150px;
+ padding: 20px;
+ font-size: 1.2rem;
+ color: white;
+ background-color: #F3663A;
+ border: none;
+ border-radius: 50px;
+}
+
+.hero-img{
+    max-width: 1000px;
+}
+
+.products > h1{
+    margin-left: 10%;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 700;
+    font-size: 3.5rem;
+    margin-bottom: -10px;
+}
+#home {
+    background-color: #f4f4f4;
+}
+
+#about {
+    background-color: #e2e2e2;
+}
+
+#services {
+    background-color: #cccccc;
+}
+
+#contact {
+    background-color: #b2b2b2;
+}
+
+nav.scrolled {
+    backdrop-filter: blur(10px);
+}
+.fa-solid{
+    transition: color 0.3s ease;
+}
+.fa-solid:hover{
+    color: #ff6347;
+}
+.fa-user{
+    transition: color 0.3s ease;
+}
+.fa-user:hover{
+    color: #ff6347;
+}
