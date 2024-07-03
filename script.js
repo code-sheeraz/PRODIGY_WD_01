@@ -11,6 +11,27 @@ document.addEventListener("DOMContentLoaded", function() {
             navbar.classList.remove("scrolled");
         }
     };
-
-  
 });
+
+// script.js
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.querySelector('.hamburger');
+    const cross = document.querySelector('.cross');
+    const navLinks = document.querySelector('.nav-links');
+    const menuIcons = document.querySelector('.menu-icons');
+
+    if (hamburger && cross && navLinks && menuIcons) {
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            menuIcons.classList.toggle('active');
+        });
+
+        cross.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            menuIcons.classList.toggle('active');
+        });
+    } else {
+        console.error("One or more elements could not be found in the DOM.");
+    }
+});
+
