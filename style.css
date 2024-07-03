@@ -128,6 +128,14 @@ section {
 .hero-img{
     max-width: 1000px;
 }
+.products > h1{
+    margin-left: 10%;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 700;
+    font-size: 3.5rem;
+    margin-top: -60px;
+    margin-bottom: -10px;
+}
 
 /*-- VARIABLES CSS--*/
 /*Colores*/
@@ -316,16 +324,10 @@ nav.scrolled {
     }
     .logo img {
         margin-right: -45px;
+        margin-left: -60px;
     }
 }
-.products > h1{
-    margin-left: 10%;
-    font-family: "M PLUS Rounded 1c", sans-serif;
-    font-weight: 700;
-    font-size: 3.5rem;
-    margin-top: -60px;
-    margin-bottom: -10px;
-}
+
 @media screen and (max-width: 500px){
     .products >h1{
         font-size: 2rem;
