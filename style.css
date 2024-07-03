@@ -36,7 +36,7 @@ nav {
 
 .logo img {
     max-width: 150px;
-    margin-right: 10px;
+    margin-right: -40px;
 }
 
 nav ul {
@@ -310,7 +310,6 @@ nav.scrolled {
 
     .hero-img{
         max-width: 250px;
-        margin-right: 0;
     }
     .hero-btn{
         font-size: 1rem;
