@@ -81,48 +81,6 @@ nav ul li a:hover {
     display: none;
 }
 
-@media screen and (max-width: 768px) {
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 80px;
-        left: 0;
-        width: 100%;
-        background-color: #ffffff;
-    }
-
-    .nav-links.active {
-        display: flex;
-    }
-
-    .nav-links .nav-icons {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-    }
-
-    .menu-icons {
-        display: block;
-    }
-
-    .hamburger {
-        display: block;
-    }
-
-    .cross {
-        display: none;
-    }
-
-    .menu-icons.active .hamburger {
-        display: none;
-    }
-
-    .menu-icons.active .cross {
-        display: block;
-    }
-}
-
 section {
     padding: 100px 20px;
     margin-top: 110px;
@@ -170,34 +128,7 @@ section {
 .hero-img{
     max-width: 1000px;
 }
-@media screen and (max-width: 390px) {
-    .hero-sec{
-        margin-top: -20px;
-    }
-    .col-l>h1{
-        font-size: 2rem;
-    }
 
-    .hero-img{
-        max-width: 300px;
-    }
-    .hero-btn{
-        font-size: 1rem;
-    }
-}
-.products > h1{
-    margin-left: 10%;
-    font-family: "M PLUS Rounded 1c", sans-serif;
-    font-weight: 700;
-    font-size: 3.5rem;
-    margin-top: -60px;
-    margin-bottom: -10px;
-}
-@media screen and (max-width: 390px){
-    .products >h1{
-        font-size: 2rem;
-    }
-}
 /*-- VARIABLES CSS--*/
 /*Colores*/
 :root{
@@ -215,13 +146,7 @@ section {
     --normal-font-size: 0.938rem;
     --smaller-font-size: 0.75rem;
 }
-@media screen and (min-width: 768px){
-    :root{
-        --h1-font-size: 2rem;
-        --normal-font-size: 1rem;
-        --smaller-font-size: 0.813rem;
-    }
-}
+
 
 /*-- BASE --*/
 *,::after,::before{
@@ -337,15 +262,6 @@ article:nth-child(4){
     padding: 0 1.5rem;
 }
 
-/*-- MEDIA QUERIES --*/
-@media screen and (min-width: 1200px){
-
-    .bd-grid{
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
 
 #home {
     background-color: #f4f4f4;
@@ -377,4 +293,100 @@ nav.scrolled {
 }
 .fa-user:hover{
     color: #ff6347;
+}
+
+
+/* Media */
+@media screen and (max-width: 500px) {
+    nav{
+    display: flex;
+    align-items: center;
+    justify-content: ;
+    left: -40px;
+    }
+    .hero-sec{
+        margin-top: -20px;
+    }
+    .col-l>h1{
+        font-size: 2rem;
+    }
+
+    .hero-img{
+        max-width: 250px;
+    }
+    .hero-btn{
+        font-size: 1rem;
+    }
+    .logo img {
+        margin-right: -45px;
+    }
+}
+.products > h1{
+    margin-left: 10%;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 700;
+    font-size: 3.5rem;
+    margin-top: -60px;
+    margin-bottom: -10px;
+}
+@media screen and (max-width: 390px){
+    .products >h1{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 768px){
+    :root{
+        --h1-font-size: 2rem;
+        --normal-font-size: 1rem;
+        --smaller-font-size: 0.813rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links .nav-icons {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .menu-icons {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .cross {
+        display: none;
+    }
+
+    .menu-icons.active .hamburger {
+        display: none;
+    }
+
+    .menu-icons.active .cross {
+        display: block;
+    }
+}
+@media screen and (min-width: 1200px){
+
+    .bd-grid{
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
