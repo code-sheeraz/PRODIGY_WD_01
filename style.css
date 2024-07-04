@@ -409,6 +409,9 @@ border-top: 1px solid #4343434f;
 .f-sec-3 a:hover{
     color: #ff6347;
 }
+.f-sec-3 a:active{
+    color: #000000;
+}
 /* Media */
 @media screen and (max-width: 550px) {
     .new-collec{
